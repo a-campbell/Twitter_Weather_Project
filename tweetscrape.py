@@ -19,10 +19,10 @@ class StdOutListener(StreamListener):
         j=json.loads(data)
 
         #If the tweet is not a retweet, not a response, and has a geolocation...
-        if not j["retweeted"] & (j["in_reply_to_status_id"] == 'null') & (j["coordinates"] != 'None'):      
-
+        if j["coordinates"] != None:      
+#(j["in_reply_to_status_id"] == 'null') & (
         	#write the tweet to our output file      
-            fhOut.write("%s\n" % [j["id"],j["created_at"], j["coordinates"], j["lang"], j["text"]])
+	        fhOut.write("%s\n" % [j["id"],j["created_at"], j["coordinates"], j["lang"], j["text"]])
         
     def on_error(self, status):
         print("ERROR")
@@ -31,7 +31,7 @@ class StdOutListener(StreamListener):
 if __name__ == '__main__':
     try:
         #Create a file to store output. "a" means append (add on to previous file)
-        fhOut = open("tweetoutput3.txt","a")
+        fhOut = open("tweetoutput7.txt","a")
 
         #Create the listener
         l = StdOutListener()
