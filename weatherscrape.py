@@ -31,7 +31,7 @@ class StdOutListener(StreamListener):
 if __name__ == '__main__':
     try:
         #Create a file to store output. "a" means append (add on to previous file)
-        fhOut = open("tweetoutput7.txt","a")
+        fhOut = open("tweetoutput8.txt","a")
 
         #Create the listener
         l = StdOutListener()
