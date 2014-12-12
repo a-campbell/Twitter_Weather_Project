@@ -53,61 +53,107 @@
 <h1>
 <a id="our-findings" class="anchor" href="#our-findings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Our Findings</h1>
 
-<p>We found that there is no clear cut relationship between weather and Twitter sentiment in the cities we observed. The impact of different types of weather on Tweet sentiment appears to vary by city. </p>
+<p>We found that there is no clear cut relationship between weather and Twitter sentiment in the cities we observed. The impact of different types of weather on Tweet sentiment appears to vary by city. The graphs below utilize scaled histograms of Tweet polarity to compare the impact of weather on happiness in finer detail.</p>
+
+<h2>
+<a id="temperature" class="anchor" href="#temperature" aria-hidden="true"><span class="octicon octicon-link"></span></a>Temperature</h2>
 
 <h3>
-<a id="rain" class="anchor" href="#rain" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rain</h3>
+<a id="another-scorcher" class="anchor" href="#another-scorcher" aria-hidden="true"><span class="octicon octicon-link"></span></a>“Another Scorcher!"</h3>
 
-<p>After grouping our 15 textual weather conditions tags (one of which is attached to every tweet) into two main categories, rainy and clear, we were able to observe some impact of weather on the distributions of Tweet polarity. Chicago, Los Angeles, and Seattle based users appear to prefer clear conditions while New Yorkers seem to enjoy a bit of rain! </p>
+<p>We found that when it is more than 8 degrees warmer than the normal temperature for that hour in a particular city, users from Los Angeles and Seattle become happier, while New Yorkers, Bostonians, and Miamians get a little grumpy.</p>
 
-<p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/Rainy%20vs.%20Clear.png" alt=""> </p>
+<p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/hotvsnothot.png" alt=""></p>
+
+<h3>
+<a id="brr-its-cold-out-here" class="anchor" href="#brr-its-cold-out-here" aria-hidden="true"><span class="octicon octicon-link"></span></a>“Brr... Its cold out here!”</h3>
+
+<p>When it gets colder than 8 degrees below mean hourly temperature for a city, Londoners become unhappy while New Yorkers, Bostonians, and Chicagoans tend to share their smiles on the social web. </p>
+
+<p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/unusuallycold.png" alt=""></p>
+
+<h2>
+<a id="rain-or-shine" class="anchor" href="#rain-or-shine" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rain or Shine</h2>
+
+<h3>
+<a id="binary-weather-grouping" class="anchor" href="#binary-weather-grouping" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Weather Grouping</h3>
+
+<p>After grouping our 15 textual weather conditions tags (one of which is attached to every tweet) into two main categories, rainy and clear, we were able to observe some impact of broadly defined weather groups on Tweet polarity. Chicago, Los Angeles, and Seattle based users appear to prefer clear conditions while New Yorkers seem to enjoy a bit of rain! </p>
+
+<p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/rainyclearfix.png" alt=""> </p>
 
 <p>It is plausible that weather might only impact happiness during the day, when people are more likely to be outside. As such, we reran our analysis on the conditions tag groups using only tweets between 6:00 AM and 7:00 PM. During the day, it appears Los Angeles, London and Seattle users have the strongest preference for clear skies while New Yorkers still love their rain.</p>
 
-<p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/Daytime.png" alt=""></p>
-
-<p>Heavy rain (defined as rainfall greater than 0.02 In per hour) appears to have a very substantial impact on sentiment in some cities. It seems that while New Yorkers may like a little rain, heavy rain really grinds their gears. Seattle, LA, Boston, and Chicago users also seem to have a distaste for downpour. (Note: London numerical precipitation data was corrupted and had to be excluded)</p>
-
-<p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/heavy%20rain.png" alt=""></p>
-
-<p>Interestingly enough, Seattle Tweeters seemed to be bothered by light rain! </p>
+<p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/dayimetitlefix.png" alt=""></p>
 
 <h3>
-<a id="seattle-light-rain" class="anchor" href="#seattle-light-rain" aria-hidden="true"><span class="octicon octicon-link"></span></a>Seattle Light Rain</h3>
+<a id="its-raining-cats-and-dogs" class="anchor" href="#its-raining-cats-and-dogs" aria-hidden="true"><span class="octicon octicon-link"></span></a>“Its raining cats and dogs!"</h3>
 
-<p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/seattle%20light%20drizzle.png" alt=""></p>
+<p>Heavy rain (defined as rainfall greater than 0.02 inches per hour) appears to have a very substantial impact on sentiment in some cities. It seems that while New Yorkers may like a little rain, heavy rain really grinds their gears. Seattle, LA, Boston, and Chicago users also seem to have a distaste for downpour. (Note: London numerical precipitation data was corrupted and had to be excluded.)</p>
+
+<p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/veryrainyfix.png" alt=""></p>
+
+<h2>
+<a id="other-quirks" class="anchor" href="#other-quirks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other Quirks</h2>
+
+<h3>
+<a id="seattle-light-drizzle" class="anchor" href="#seattle-light-drizzle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Seattle Light Drizzle</h3>
+
+<p>Ironically, Seattle Tweeters seemed to be bothered by a light drizzle! 
+<img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/Seattledrizzle2.png" alt=""></p>
+
+<h3>
+<a id="boston-light-hail" class="anchor" href="#boston-light-hail" aria-hidden="true"><span class="octicon octicon-link"></span></a>Boston Light Hail</h3>
+
+<p>Bostonians get <em>wicked ticked off</em> by hail.
+<img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/Bostonsmallhail.png" alt=""></p>
+
+<h3>
+<a id="new-york-light-snow" class="anchor" href="#new-york-light-snow" aria-hidden="true"><span class="octicon octicon-link"></span></a>New York Light Snow</h3>
+
+<p>The Big Apple loves a little snow. 
+<img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/nylightsnow.png" alt=""></p>
 
 <hr>
 
 <h1>
-<a id="other-interesting-findings" class="anchor" href="#other-interesting-findings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other Interesting Findings</h1>
+<a id="time-trends" class="anchor" href="#time-trends" aria-hidden="true"><span class="octicon octicon-link"></span></a>Time Trends</h1>
 
-<h3>
-<a id="tweet-volume" class="anchor" href="#tweet-volume" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tweet Volume</h3>
+<p>We found that our Tweet volume, polarity and weather data all seemed to follow daily trends. The previous analysis was careful to control for time, as it constitutes a substantial potential bias. Some of the trends are quite interesting! </p>
 
-<p>We stumbled upon some other interesting trends in our data on our inquiry. Our cities follow slightly different patterns in the volume of tweets they produce each hour, but in general very few people tweet early in the morning and activity peaks around 10:00 PM. New York and L.A. produce more tweets than the other cities.</p>
+<h2>
+<a id="tweet-volume" class="anchor" href="#tweet-volume" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tweet Volume</h2>
+
+<p>Our cities follow slightly different patterns in the volume of tweets they produce each hour, but in general very few people tweet early in the morning and activity peaks around 10:00 PM. New York and L.A. produce more tweets than the other cities.</p>
 
 <p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/total_tweet_stacked_hist.png" alt=""></p>
 
-<h3>
-<a id="polarity-time-trend" class="anchor" href="#polarity-time-trend" aria-hidden="true"><span class="octicon octicon-link"></span></a>Polarity Time Trend</h3>
+<h2>
+<a id="polarity-time-trend" class="anchor" href="#polarity-time-trend" aria-hidden="true"><span class="octicon octicon-link"></span></a>Polarity Time Trend</h2>
 
 <p>Tweet polarity also follow a time trend throughout the day. This trend is similar for American cities, with happiness peaking around 10:00 AM. Interestingly, Londoners follows a distinctly different pattern, getting happiest around 3:00 PM. (Note: All data is corrected for time zone)</p>
 
 <p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/polarity%20by%20hour.png" alt=""></p>
 
-<h3>
-<a id="weather-time-trends" class="anchor" href="#weather-time-trends" aria-hidden="true"><span class="octicon octicon-link"></span></a>Weather Time Trends</h3>
+<h2>
+<a id="weather-time-trends" class="anchor" href="#weather-time-trends" aria-hidden="true"><span class="octicon octicon-link"></span></a>Weather Time Trends</h2>
 
-<p>In comparing polarity and weather, we must be careful to account for time trends. We observed that each city follows distinct weather patterns.</p>
+<p>We observed that each city follows distinct weather patterns. Temperature and Humidity follow trends while precipitation appears more random. </p>
+
+<h3>
+<a id="temperature-1" class="anchor" href="#temperature-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Temperature</h3>
 
 <p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/tempbyhour.png" alt=""> </p>
 
+<h3>
+<a id="humidity" class="anchor" href="#humidity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Humidity</h3>
+
 <p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/humidity%20by%20hour.png" alt=""></p>
 
-<p>However, rainfall does not appear to follow a daily time trend. </p>
+<h3>
+<a id="rainfall" class="anchor" href="#rainfall" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rainfall</h3>
 
-<p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/rain%20by%20hour.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/theandycamps/Twitter_Weather_Project/gh-pages/images/rainfallhourlytogether.png" alt=""></p>
         </section>
 
         <aside id="sidebar">
