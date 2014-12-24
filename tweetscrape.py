@@ -3,10 +3,10 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 from tweepy import API
 import json
-access_token = "20283926-IIH9J0azYI93f3VZ3zHbiOFqABXTQ3aivMA3Mjw1c"
-access_token_secret = "9590z227cf1s9qPKDRfkGSahfOAO9ge8rj6NTyIi97WmN"
-consumer_key = "Hi7w67EqoiyOSjPbCFeq1mmkl"
-consumer_secret = "Rac1HDteRdGD6Hblbn2mg2y9al5IWqZGfVTY8chWi8UliDSJOo"
+access_token = ""
+access_token_secret = ""
+consumer_key = ""
+consumer_secret = ""
 
 allcords = [-0.530, 51.322, 0.231, 51.707, -74.255, 40.2557, -73.689, 40.9176,-87.968, 41.625, -87.397, 42.074,-118.9448, 32.8007, -117.646, 34.823,-122.472, 47.4224, -122.176, 47.7451,-71.898, 42.156, -71.020, 42.736, -80.87, 25.137, -80.118, 25.979]
 
